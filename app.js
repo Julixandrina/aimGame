@@ -87,4 +87,15 @@ function getRandomNumber(min,max) {
 function getRandomColor() {
   return COLORS[Math.floor(Math.random() * COLORS.length)]
   }
+
+  //хакдля прохождения игры
+  function winTheGame() {
+    function kill() {
+      const circle = document.querySelector('.circle')
+      if(circle) {
+        circle.click()
+      }
+    }
+    setInterval(kill, 75)
+  }
   
